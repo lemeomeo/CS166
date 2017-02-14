@@ -1,0 +1,45 @@
+Lecture Feb 13
+================
+
+> Disclaimer: I think I missed half of the earlier lecture
+# Totient Function
+φ(n) is the number of numbers less than n, relatively prime to n. Relatively prime means two numbers that have no common factor other than 1. For example, *7* and *20* are relative primes.
+
+### Lab part 1:
+
+1. 8 and 9 are relative prime, they don't have any common factor other than 1.
+2. What is φ(15) ?
+	* 1, 2, 4, 7, 8, 11, 13, 14
+	* So φ(15) = 8
+3. What is multiplicative of inverse 4 mod 13 ? 
+	* Assuming modular multiplicative inverse is x, we want to find x when a . x = 1 (mod m). Substitute in the values, we have (4 * x) mod 13 = 1, therefore x = 10 because 40 mod 13 = 1.
+
+SIK = (3,4,9,21,45,96, 199, 402) 
+
+# Knapsack
+Having a set of n weighs W0...Wn-1 and sum S. Is is possible that S = a0W0+....(an-1)(Wn-1), know that a ∈ {0, 1}
+
+### Lab part 2:
+
+1. Private key (General superincreasing knapsack) SIK = (3,4,9,21,45,96, 199, 402) 
+m = 32, n = 1215. Find the public key
+3 . 32 mod 1215 = 96
+4 . 32 mod 1215 = 128
+9 . 32 mod 1215 = 288
+21 . 32 mod 1215 = 672
+45 . 32 mod 1215 = 225
+......................
+
+# RSA
+
+### Lab part 3:
+
+1. p = 107, q = 293
+Calculate the modulus N with p and q. Use e=3. What is the public key? 
+Let N = pq = 31351 be the modulus
+Choose e relatively prime to (p-1)(q-1) = (106)(292) = 30952
+ φ(30952) = 14976. Therefor the public key is:
+
+ > (31351, 3)
+
+ 2. 
